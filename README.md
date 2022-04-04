@@ -1,1 +1,1 @@
-# coding-competition-questionairre
+# coding-competition-questionnaire
