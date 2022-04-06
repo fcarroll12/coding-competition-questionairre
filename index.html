@@ -10,7 +10,7 @@
     <nav class="quiz-header">
             <ul>
                 <li> <a href="#">View Highscores</a></li>
-                <li class="countdown">Time:0</li>
+                <li class="countdown">Time:75</li>
             </ul>
     </nav>
     <div class="container">
@@ -19,39 +19,66 @@
         </h1>      
         <button class="start-button">Start Quiz</button>   
     </div>
-    <main class="questions">
-        <section>
+    <main id="questions" class="hide">
+        <section id="first-question" class="first">
             <h2> Commonly used data types DO NOT include:</h2>
-            <div data-answer="alerts">
-                <button class="choice-btn">strings</button>
-                <button class="choice-btn">booleans</button>
-                <button class="choice-btn">alerts</button>
-                <button class="choice-btn">numbers</button>
-            </div>
-            <h2>The condition in an if/else statement is enclosed within ____</h2>
-            <div condition-answer="curly brackets">
-                <button class="choice-btn">quotes</button>
-                <button class="choice-btn">curly brackets</button>
-                <button class="choice-btn">paranthesis</button>
-                <button class="choice-btn">square brackets</button>                
-            </div>
-            <h2>Arrays in JavaScript can be used to store ____</h2>
-            <div arrays-answer="all of the above">
-                <button class="choice-btn">numbers and strings</button>
-                <button class="choice-btn">other arrays</button>
-                <button class="choice-btn">booleans</button>
-                <button class="choice-btn">all of the above</button>                
-            </div>
-            <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
-            <div tool-answer="console.log">
-                <button class="choice-btn">Javascript</button>
-                <button class="choice-btn">terminal/bash</button>
-                <button class="choice-btn">for loops</button>
-                <button class="choice-btn">console.log</button>                
+            <div data-answer="3.alerts" class="btn">
+                <button class="wrong-btn">1. strings</button>
+                <button class="wrong-btn">2. booleans</button>
+                <button class="wrong-btn">3. alerts</button>
+                <button class="wrong-btn">4. numbers</button>
             </div>
         </section>
+        <section id="secondquestion" class="second">
+            <h2>The condition in an if/else statement is enclosed within ____</h2>
+            <div data-answer="4.square brackets" class="btn"">
+                <button class="wrong-btn">1. quotes</button>
+                <button class="wrong-btn">2. curly brackets</button>
+                <button class="wrong-btn">3. paranthesis</button>
+                <button class="wrong-btn">4. square brackets</button>                
+            </div>
+        </section>
+        <section id="thirdquestion" class="third">
+            <h2>Arrays in JavaScript can be used to store ____</h2>
+            <div data-answer="4. all of the above" class="btn">
+                <button class="wrong-btn">1. numbers and strings</button>
+                <button class="wrong-btn">2. other arrays</button>
+                <button class="wrong-btn">3. booleans</button>
+                <button class="wrong-btn">4. all of the above</button>                
+            </div>
+        </section>
+        <section id="fourthquestion" class="fourth">
+            <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+            <div data-answer="4. console.log" class="btn">
+                <button class="wrong-btn">1. Javascript</button>
+                <button class="wrong-btn">2. terminal/bash</button>
+                <button class="wrong-btn">3. for loops</button>
+                <button class="wrong-btn">4. console.log</button>                
+            </div>
+        </section>
+        <section id="finalpage">
+            <h2>All done!</h2>
+            <div class="score-text">
+                <p> Your final score is  </p>
+            </div>
+            <div class="enter-initials">
+                <p>Enter Initials: </p>
+                <input type="text" id="initials">
+                <button id="submit-btn">Submit</button>
+            </div>
+        </section>
+        <section id="highscore-page">
+            <h2>Highscores</h2>
+            <ul>
+                <li id="highscores"</li>
+            </ul>
+            <button id="goback-btn">Go Back</button>
+            <button id="c-highscores">Clear Highscores</button>
+        </section>
     </main>
+
     <script src="./assets/script.js"
+
 </body>
 
 </html>

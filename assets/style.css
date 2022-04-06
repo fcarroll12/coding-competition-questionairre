@@ -16,7 +16,6 @@ h1 {
     margin-bottom: 2rem;
     text-align: center;
     
-    
 }
 
 h5 {
@@ -41,9 +40,18 @@ button {
     transition: 0.3s;
     width: 60vw;
 }
-.questions {
-    display:none;
+#questions {
+    display:;
+    max-width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
 }
+
+.hide {
+    display: 
+}
+
 a {
     padding: 2px;
     cursor: pointer;
@@ -67,5 +75,20 @@ a {
     font-size: 15px;
     text-align: right;
     float:right;
+}
+
+.choice-btn {
+    padding: 2px;
+    margin: 15px;
+    border-radius: 4px;
+    display: block;
+    align-items: center;
+  }
+
+.data-answer {
+    align-items: center;
+    text-align: center;
+    display: block;
+    max-width: 100%;
 }
 
